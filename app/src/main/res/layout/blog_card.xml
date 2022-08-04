@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardMaxElevation="8dp"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/blogHeadingCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What is the heading of the text?"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="3dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.ms.square.android.expandabletextview.ExpandableTextView
+                android:layout_width="match_parent"
+                android:id="@+id/expandable_text_view"
+                android:layout_height="wrap_content"
+                app:maxCollapsedLines="4"
+                app:animDuration="200">
+
+                <TextView
+                    android:id="@+id/expandable_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I used to co-host a morning radio show back in the 90s, and we did a version of “The Dating Game” on the air. Just like the classic TV show, we’d have a woman choosing between 3 eligible bachelors, or a man choosing between 3 “bachelorettes.”The winner would get a date paid for by the station, and the runners up would get a consolation prize. Part of my job was to coordinate everything between the contestants. This one day, we had the bachelor in the studio, and three women on the phone. He picked one for his date (it was tickets to a baseball game and dinner at a nice restaurant), and afterwards I got all the information from the runners up so that they could get their prizes."
+                    android:ellipsize="end"
+                    android:textSize="16sp"/>
+
+                <ImageButton
+                    android:id="@+id/expand_collapse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:background="@android:color/transparent"
+                    android:padding="16dp"/>
+            </com.ms.square.android.expandabletextview.ExpandableTextView>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/blogWriterCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="...by Harrison Wells"
+            android:gravity="end"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/primaryDark"
+            android:layout_marginTop="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/blogDateCard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Date: 20-04-2022"
+                android:textColor="@color/primaryDark"
+                android:textSize="15sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/blogTimeCard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Time: 07:08:54 AM"
+                android:textColor="@color/primaryDark"
+                android:textSize="15sp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navFacts"
+            android:title="Facts"
+            android:icon="@drawable/fact_menu"/>
+
+        <item
+            android:id="@+id/navBlog"
+            android:title="Blogs"
+            android:icon="@drawable/blog_menu"/>
+
+        <item
+            android:id="@+id/navQuotes"
+            android:title="Quotes"
+            android:icon="@drawable/quotes_menu"/>
+
+        <item
+            android:id="@+id/navQuiz"
+            android:title="Quizzes"
+            android:icon="@drawable/quiz_menu"/>
+
+        <item
+            android:id="@+id/navProfile"
+            android:title="Profile"
+            android:icon="@drawable/profile_menu"/>
+
+        <item
+            android:id="@+id/navContactUs"
+            android:title="Contact Us"
+            android:icon="@drawable/contact_menu"/>
+
+        <item
+            android:id="@+id/navAboutUs"
+            android:title="About Us"
+            android:icon="@drawable/about_menu"/>
+
+        <item
+            android:id="@+id/navLogout"
+            android:title="Logout"
+            android:icon="@drawable/logout_menu"/>
+    </group>
+</menu>

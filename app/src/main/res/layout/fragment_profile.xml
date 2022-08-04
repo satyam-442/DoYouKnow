@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ProfileFragment"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/editProfileImg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:src="@drawable/edit_profile"
+            android:padding="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/profile"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/usernameProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/baloo"
+            android:textColor="@color/primaryDark"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/userEmailProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/nunito_sans"
+            android:textColor="@color/primaryDark"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6.5">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:cardElevation="5dp"
+                        app:cardCornerRadius="5dp"
+                        android:layout_margin="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="855"
+                                android:layout_gravity="center"
+                                android:textSize="32sp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/baloo"
+                                android:textColor="@color/primaryDark"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Earned Credit's"
+                                android:layout_gravity="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/poppins"
+                                android:textColor="@color/primaryDark"/>
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:cardElevation="5dp"
+                        app:cardCornerRadius="5dp"
+                        android:layout_margin="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2"
+                                android:layout_gravity="center"
+                                android:textSize="32sp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/baloo"
+                                android:textColor="@color/primaryDark"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="quiz attempted"
+                                android:textAllCaps="true"
+                                android:layout_gravity="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/poppins"
+                                android:textColor="@color/primaryDark"/>
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:letterSpacing="0.15"
+                    android:textStyle="bold"
+                    android:text="E-mail:"
+                    android:textColor="@color/primaryDark"
+                    android:textSize="21sp"
+                    android:layout_marginTop="15dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/emailOfUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/primaryDark"
+                        android:textSize="16sp"
+                        android:gravity="start"/>
+
+                    <TextView
+                        android:id="@+id/verifiedText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/secondaryDark"
+                        android:textSize="16sp"
+                        android:text="(verified)"
+                        android:layout_marginStart="7dp"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:letterSpacing="0.15"
+                    android:textStyle="bold"
+                    android:text="Phone no.:"
+                    android:textColor="@color/primaryDark"
+                    android:textSize="21sp"
+                    android:layout_marginTop="15dp"/>
+
+                <TextView
+                    android:id="@+id/phoneOfUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/primaryDark"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:letterSpacing="0.15"
+                    android:textStyle="bold"
+                    android:text="About:"
+                    android:textColor="@color/primaryDark"
+                    android:textSize="21sp"
+                    android:layout_marginTop="15dp"/>
+
+                <TextView
+                    android:id="@+id/aboutOfUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/primaryDark"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/reqBecomeBlogger"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:text="Want to Collaborate with us?"
+        android:gravity="center"
+        android:textColor="@color/primaryDark"
+        android:fontFamily="@font/poppins"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+</LinearLayout>
